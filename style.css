@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins',sans-serif;
+}
+html{
+ 
+   font-size: 62.5%;
+
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    padding: 2.0rem 10%;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0.5rem 0.8rem 1.0rem rgba(0, 0, 0, 0.1);
+}
+nav.logo{
+    width: 15.0rem;
+    cursor: pointer;
+}
+nav.menu-img{
+    width: 5.0rem;
+}
+nav ul{
+    flex:1;
+    text-align: right;
+    margin-right: 15.0rem;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 1.0rem 3.0rem;
+    font-size: large;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(88, 63, 63);
+    font-weight: 700;
+    position: relative;
+    padding: 1.0rem;
+}
+nav ul li a::before{
+    content:'' ;
+    width: 100%;
+    height: 8.5rem;
+
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: -5px;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+    transition: height 0.5s;
+}
+nav ul li a:hover::before{
+    height: 8.5rem;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex-basis: 50%;
+    position: relative;
+
+}
+.feature-img{
+    width: 100%;
+    border-bottom: 0.2rem;
+    display: flexbox;
+    margin-left: 40rem;
+  }
+
+.col h1{
+   margin-top: 7.0rem;
+   font-size: 4.0rem;
+   font-weight: 600;
+}
+.poster .btn {
+background: linear-gradient(180deg, #40be2c 0%, #136706 100%);
+border-radius: 10.0rem;
+border: none;
+color: #ffffff;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 1.125;
+line-height: 2.6rem;
+display: inline-block;
+}
+[type=reset], [type=submit], button, html [type=button] {
+-webkit-appearance: button;
+}
+.pl-5, .px-5 {
+padding-left: 3rem!important;
+}
+.master{
+    font-size: large;
+    padding-left: 0.2cm;
+}
+
+@media only screen and (max-width: 740px) {
+  nav{
+        display: block;
+        justify-content: center;
+        max-width: 100%;
+        align-items: center;
+        /* margin: 0 auto; */
+        margin: 0 auto;
+      }
+      
+    .logo {
+        margin: 5px 0 0 10px;
+        width: 75%;
+    }
+
+  .col{
+    flex: 100%;
+  }
+
+.feature-img{
+  margin: 6px 0;
+  width: 50%;
+}
+.turing{
+  align-self: center;
+}
+
+ }
+
+  
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 0.8em 0;
+    }
+    .feature-img{
+        width: 100%;
+        border-bottom: 0.2rem;
+        margin-right: 0 auto;
+      }
+  }
+  .container {
+    padding: 1rem 3rem;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #46846d;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  /* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: rgb(95, 60, 60);
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    padding-top: 29px;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+  
+  /* Set the size of the div element 
+  that contains the map */
+  #map {
+      height: 400px;
+      width: 400px;
+  }
+    
+  h2 {
+      color: #308d46;
+  }
+
+  .maps{
+    padding-left: 195px ;
+  }
+  .contact{
+    background: #e2f8df;
+  }
+  .abt{
+    background: #e2f8df;
+  }
+  .turing{
+    padding-left: 446px;
+  }
+  
